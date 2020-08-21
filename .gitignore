@@ -1,0 +1,12 @@
+.idea/*
+*.iml
+*/target
+.idea/*
+.settings
+.classpath
+.project
+*.log
+.DS_Store
+target
+*.gz
+/src/test/http/
