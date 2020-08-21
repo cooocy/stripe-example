@@ -24,53 +24,59 @@ public abstract class AbstractStripeSDK {
         // todo check with currency;
     }
 
-    interface Params {
+    static class Params {
 
-        String CARD_PAYMENTS = "card_payments";
+        static final String CARD_PAYMENTS = "card_payments";
 
-        String TRANSFERS = "transfers";
+        static final String TRANSFERS = "transfers";
 
-        String REQUESTED_CAPABILITIES = "requested_capabilities";
+        static final String REQUESTED_CAPABILITIES = "requested_capabilities";
 
-        String TYPE = "type";
+        static final String TYPE = "type";
 
-        String EMAIL = "email";
+        static final String EMAIL = "email";
 
-        String AMOUNT = "amount";
+        static final String AMOUNT = "amount";
 
-        String CURRENCY = "currency";
+        static final String CURRENCY = "currency";
 
-        String PRICE = "price";
+        static final String PRICE = "price";
 
-        String QUANTITY = "quantity";
+        static final String QUANTITY = "quantity";
 
-        String SUCCESS_URL = "success_url";
+        static final String SUCCESS_URL = "success_url";
 
-        String CANCEL_URL = "cancel_url";
+        static final String CANCEL_URL = "cancel_url";
 
-        String PAYMENT_METHOD_TYPES = "payment_method_types";
+        static final String PAYMENT_METHOD_TYPES = "payment_method_types";
 
-        String LINE_ITEMS = "line_items";
+        static final String LINE_ITEMS = "line_items";
 
-        String MODE = "mode";
+        static final String MODE = "mode";
 
-        String CUSTOMER = "customer";
+        static final String CUSTOMER = "customer";
 
-        String INTERVAL = "interval";
+        static final String INTERVAL = "interval";
 
-        String UNIT_AMOUNT = "unit_amount";
+        static final String UNIT_AMOUNT = "unit_amount";
 
-        String RECURRING = "recurring";
+        static final String RECURRING = "recurring";
 
-        String PRODUCT = "product";
+        static final String PRODUCT = "product";
 
-        String COUPON = "coupon";
+        static final String COUPON = "coupon";
 
-        String DURATION = "duration";
+        static final String DURATION = "duration";
 
-        String NAME = "name";
+        static final String NAME = "name";
 
-        String AMOUNT_OFF = "amount_off";
+        static final String DESCRIPTION = "description";
+
+        static final String IMAGES = "images";
+
+        static final String AMOUNT_OFF = "amount_off";
+
+        static final String PERCENT_OFF = "percent_off";
 
     }
 

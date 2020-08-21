@@ -27,7 +27,7 @@ public class ProductSDKTest {
      */
     @Test
     public void createA() throws StripeException {
-        Product product = ProductSDK.create("test name 1");
+        Product product = ProductSDK.create("test name 1", null, null);
         Assert.assertNotNull(product);
     }
 
@@ -50,7 +50,7 @@ public class ProductSDKTest {
      */
     @Test
     public void retrieveB() throws StripeException {
-        Product product = ProductSDK.create("test name 2");
+        Product product = ProductSDK.create("test name 2", null, null);
         product = ProductSDK.retrieve(product.getId());
         Assert.assertNotNull(product);
     }

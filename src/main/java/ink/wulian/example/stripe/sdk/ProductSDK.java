@@ -1,5 +1,6 @@
 package ink.wulian.example.stripe.sdk;
 
+import cn.hutool.core.util.StrUtil;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Product;
 import lombok.AccessLevel;
@@ -20,9 +21,17 @@ import java.util.Map;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class ProductSDK extends AbstractStripeSDK {
 
-    public static Product create(@NonNull String name) throws StripeException {
-        Map<String, Object> params = new HashMap<>(1);
+    public static Product create(@NonNull String name,
+                                 String description,
+                                 String image) throws StripeException {
+        Map<String, Object> params = new HashMap<>(16);
         params.put(Params.NAME, name);
+        if (StrUtil.isNotEmpty(description)) {
+            params.put(Params.DESCRIPTION, description);
+        }
+        if (StrUtil.isNotEmpty(image)) {
+            params.put(Params.IMAGES, image);
+        }
         return Product.create(params);
     }
 
